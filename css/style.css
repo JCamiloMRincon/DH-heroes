@@ -7,7 +7,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    width: 1024px;
 }
 
 header div{
@@ -26,7 +25,7 @@ h1{
 
 section{
     margin: 152px 32px 202px;
-    width: 960px; 
+    width: 960px;
 }
 
 .card{
@@ -129,6 +128,4 @@ footer{
     font-size: 16px;
     width: 100%;
     padding: 16px;
-    position: relative;
-    bottom: 153px;
 }
