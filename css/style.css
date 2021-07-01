@@ -7,7 +7,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    width: 1024px;
 }
 
 header div{
@@ -25,8 +24,9 @@ h1{
 }
 
 section{
-    margin: 152px 32px 202px;
-    width: 960px; 
+    margin: 150px 200px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card{
@@ -105,7 +105,7 @@ h3.titleBatman{
     left: 85px;
 }
 
-.card.central{
+/* .card.central{
     position: relative;
     left: 30px;
 }
@@ -113,7 +113,7 @@ h3.titleBatman{
 .card.lateral{
     position: relative;
     left: 60px;
-}
+} */
 
 .cover-photo.harley{
     background-image: url(../img/background-harley.png);
@@ -129,6 +129,4 @@ footer{
     font-size: 16px;
     width: 100%;
     padding: 16px;
-    position: relative;
-    bottom: 153px;
 }
