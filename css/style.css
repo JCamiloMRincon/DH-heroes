@@ -10,60 +10,49 @@ body{
 }
 
 header div{
-    background-color: #1CD1B0;
+    background-color: #D1891C;
     font-size: 15px;
     padding: 10px;
 }
 
-h1{
+header h1{
     background-color: #00669F;
     box-shadow: 0px 5px rgba(0,0,0,0.2);
+    color: white;
     font-size: 40px;
     font-weight: normal;
     padding: 28px 28px 26px;
 }
 
 section{
-    margin: 150px 200px;
+    margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
-    display: inline-block;
     border-radius: 16px;
+    height: 590px;
+    margin: 30px;
     width: 300px;
 }
 
-h3.titleBatman{
-    text-transform: uppercase;
-}
-
 .cover-photo{
-    background-image: url(../img/background-batman.png);
-    background-repeat: no-repeat;
     border-radius: 16px 16px 0px 0px;
     padding: 16px 21px 150px;
     height: 193px;
     width: 300px;
-    position: relative;
-}
-
-.cover-photo.batman{
-    background-image: url(../img/background-batman.png);
 }
 
 .avatar{
     border-radius: 50%;
     height: 120px;
-    width:120px;
+    width: 120px;
     position: relative;
     left: 90px;
     bottom: 60px;
-}
-
-.avatar.batman{
-    background-image: url(../img/avatar-batman.png);
 }
 
 .fas.fa-heart{
@@ -74,21 +63,27 @@ h3.titleBatman{
 .info{
     background-color: #F3F3F3;
     box-shadow: 0px 5px 3px grey;
-    padding: 73px 16px 104px;
+    font-weight: 400;
+    height: 397px;
     position: relative;
     bottom: 120px;
-    z-index: -5;
+    z-index: -1;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
-.info{
-    font-weight: 400;
-}
+
 .info h3{
-    font-size: 30px;
+    font-size: 24px;
+    padding-top: 80px;
     text-align: center;
 }
 
 .info p{
     font-size: 16px;
+    font-weight: lighter;
+    padding: 10px 16px;
     text-align: left;
     margin-top: 10px;  
 }
@@ -97,36 +92,107 @@ h3.titleBatman{
     background-color: #00669F;
     color:#F3F3F3;
     font-size: 15px;
+    align-self: center;
     text-align: center;
     width: 130px;
-    padding: 15px 37px;
+    padding: 15px 10px;
     position: absolute;
-    bottom: 19px;
+    bottom: 10px;
     left: 85px;
 }
 
-/* .card.central{
-    position: relative;
-    left: 30px;
+.cover-photo.batman{
+    background-image: url(../img/background-batman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.card.lateral{
-    position: relative;
-    left: 60px;
-} */
+.avatar.batman{
+    background-image: url(../img/avatar-batman.png);
+}
+
+.cover-photo.wonder-woman{
+    background-image: url(../img/background-wonder-woman.png);
+    background-repeat: no-repeat;
+}
+
+.avatar.wonder-woman{
+    background-image: url(../img/avatar-wonder-woman.png);
+}
+
+.cover-photo.superman{
+    background-image: url(../img/background-superman.png);
+    background-repeat: no-repeat;
+}
+
+.avatar.superman{
+    background-image: url(../img/avatar-superman.png);
+}
 
 .cover-photo.harley{
     background-image: url(../img/background-harley.png);
+    background-repeat: no-repeat;
 }
 
 .avatar.harley{
     background-image: url(../img/avatar-harley.png);
 }
 
+h3.titleBatman, h3.titleWonderWoman, h3.titleSuperman{
+    text-transform: uppercase;
+}
+
+.add{
+    background-color: #00669F;
+    border-radius: 50%;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 80%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer{
     background-color: #00669F;
     color: #FFF9F9;
-    font-size: 16px;
     width: 100%;
     padding: 16px;
+    display: flex;
+    justify-content: space-between;
 }
+
+footer p{
+    width: 60vw;
+    text-align: right;
+}
+
+footer img{
+    width: 83px;
+    height: 23px;
+}
+
+@media (max-width: 736px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* @media (max-width: 1096px){
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer p{
+        width: 60vw;
+        text-align: right;
+    }
+} */
